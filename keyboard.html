@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming Keyboards - Rana Jussy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h1 class="logo-title">⌨️ KEYBOARD STORE</h1>
+
+    <div>
+        <a href="index.html">🏠 Home</a>
+        <a href="products.html">🎮 Products</a>
+        <a href="mouse.html">🖱️ Mouse</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>PROFESSIONAL GAMING KEYBOARDS</h2>
+    <p>Mechanical • RGB • Esports Ready</p>
+    <!-- SEARCH BAR -->
+<div class="search-wrapper hero-search">
+
+    <input type="text"
+     id="searchInput"
+     placeholder="🔍 Search gaming gear..."
+     onkeyup="searchProducts(event)">
+
+    </div>
+</div>
+
+<!-- FEATURED LARGE PRODUCT STYLE -->
+<div class="keyboard-layout">
+
+    <div class="keyboard-big">
+        <h3>Razer Huntsman Mini</h3>
+        <p>Fast optical switches, ultra low latency esports keyboard.</p>
+        <span>NPR1000</span>
+        <button onclick="addToCart('Razer Huntsman Mini',90)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>SteelSeries Apex Pro</h3>
+        <p>Adjustable mechanical switches for pro control.</p>
+        <span>NPR2300</span>
+        <button onclick="addToCart('SteelSeries Apex Pro',140)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Logitech G Pro X</h3>
+        <p>Esports-grade detachable cable keyboard.</p>
+        <span>NPR2400</span>
+        <button onclick="addToCart('Logitech G Pro X',120)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Corsair K70 RGB</h3>
+        <p>Premium aluminum frame with RGB lighting.</p>
+        <span>NPR5000</span>
+        <button onclick="addToCart('Corsair K70 RGB',110)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>HyperX Alloy FPS Pro</h3>
+        <p>Compact tenkeyless esports keyboard.</p>
+        <span>NPR3400</span>
+        <button onclick="addToCart('HyperX Alloy FPS',70)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Redragon K552 Kumara</h3>
+        <p>Budget mechanical RGB gaming keyboard.</p>
+        <span>NPR2500</span>
+        <button onclick="addToCart('Redragon K552',35)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Razer BlackWidow V4</h3>
+        <p>Full RGB mechanical gaming keyboard.</p>
+        <span>NPR600</span>
+        <button onclick="addToCart('BlackWidow V4',130)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>ASUS ROG Strix Scope</h3>
+        <p>Built for FPS competitive gaming.</p>
+        <span>NPR4500</span>
+        <button onclick="addToCart('ROG Strix Scope',125)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Logitech G213 Prodigy</h3>
+        <p>Quiet membrane RGB gaming keyboard.</p>
+        <span>NPR5000</span>
+        <button onclick="addToCart('G213 Prodigy',60)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>SteelSeries Apex 3</h3>
+        <p>Water resistant RGB gaming keyboard.</p>
+        <span>NPR3000</span>
+        <button onclick="addToCart('Apex 3',55)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Keychron K6</h3>
+        <p>Wireless mechanical keyboard for gaming & work.</p>
+        <span>NPR2300</span>
+        <button onclick="addToCart('Keychron K6',75)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Razer Cynosa V2</h3>
+        <p>Soft membrane RGB gaming keyboard.</p>
+        <span>NPR4500</span>
+        <button onclick="addToCart('Cynosa V2',50)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Cooler Master CK550</h3>
+        <p>Aluminum mechanical RGB keyboard.</p>
+        <span>NPR4500</span>
+        <button onclick="addToCart('CK550',65)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>Ajazz AK33</h3>
+        <p>Compact mechanical gaming keyboard.</p>
+        <span>NPR700</span>
+        <button onclick="addToCart('Ajazz AK33',45)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="keyboard-big">
+        <h3>HP Pavilion Gaming Keyboard</h3>
+        <p>Affordable RGB gaming keyboard.</p>
+        <span>NPR8000</span>
+        <button onclick="addToCart('HP Keyboard',40)">🛒 Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RGB Mouse - Dark Lab</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="rgbmouse-body">
+
+<!-- NAV -->
+<div class="navbar">
+    <h1>🖱️ RGB MOUSE DARK LAB</h1>
+    <a href="index.html">🏠 Home</a>
+</div>
+
+<!-- HERO -->
+<div class="hero rgbmouse-hero">
+    <h2>⚡ DARK GAMING MOUSE COLLECTION</h2>
+    <p>High precision RGB performance gear</p>
+    <!-- SEARCH BAR -->
+<div class="search-wrapper hero-search">
+
+    <input type="text"
+     id="searchInput"
+     placeholder="🔍 Search gaming gear..."
+     onkeyup="searchProducts(event)">
+
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container rgbmouse-grid">
+
+    <div class="rgbmouse-card" onclick="addToCart('Shadow RGB Mouse', 4500)">
+        <h3>🖤 Shadow RGB</h3>
+        <p>Stealth dark gaming mouse</p>
+        <span>NPR 4,500</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Neon Beast Mouse', 5200)">
+        <h3>💜 Neon Beast</h3>
+        <p>Purple glow precision mouse</p>
+        <span>NPR 5,200</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Cyber Strike Mouse', 6000)">
+        <h3>⚡ Cyber Strike</h3>
+        <p>FPS ultra fast response</p>
+        <span>NPR 6,000</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Pro Aim Elite', 7500)">
+        <h3>🎯 Pro Aim Elite</h3>
+        <p>Esports accuracy beast</p>
+        <span>NPR 7,500</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Viper RGB X', 6800)">
+        <h3>🐍 Viper RGB X</h3>
+        <p>Snake speed precision sensor</p>
+        <span>NPR 6,800</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Frost Ice Mouse', 6100)">
+        <h3>❄️ Frost Ice</h3>
+        <p>Cool blue frozen RGB design</p>
+        <span>NPR 6,100</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Dragon Flame Mouse', 7200)">
+        <h3>🐉 Dragon Flame</h3>
+        <p>Fire powered gaming mouse</p>
+        <span>NPR 7,200</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Galaxy Star Mouse', 8000)">
+        <h3>🌌 Galaxy Star</h3>
+        <p>Cosmic space RGB effect</p>
+        <span>NPR 8,000</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Shadow Assassin Mouse', 9000)">
+        <h3>🗡️ Assassin Pro</h3>
+        <p>Silent pro gaming mouse</p>
+        <span>NPR 9,000</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Lightning Speed Mouse', 6500)">
+        <h3>⚡ Lightning Speed</h3>
+        <p>Ultra fast click response</p>
+        <span>NPR 6,500</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Titan Core Mouse', 9500)">
+        <h3>🛡️ Titan Core</h3>
+        <p>Heavy duty esports mouse</p>
+        <span>NPR 9,500</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Inferno RGB Mouse', 7700)">
+        <h3>🔥 Inferno RGB</h3>
+        <p>Fire glow gaming beast</p>
+        <span>NPR 7,700</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Crystal White Mouse', 5900)">
+        <h3>🤍 Crystal White</h3>
+        <p>Clean premium white design</p>
+        <span>NPR 5,900</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Night Phantom Mouse', 8200)">
+        <h3>🌙 Night Phantom</h3>
+        <p>Dark ghost stealth mode</p>
+        <span>NPR 8,200</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Elite Pro X Mouse', 10000)">
+        <h3>👑 Elite Pro X</h3>
+        <p>Ultimate pro gaming mouse</p>
+        <span>NPR 10,000</span>
+    </div>
+
+    <div class="rgbmouse-card" onclick="addToCart('Neon Pulse Mouse', 6400)">
+    <h3>🌈 Neon Pulse</h3>
+    <p>Reactive RGB breathing lights</p>
+    <span>NPR 6,400</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Stealth Black X Mouse', 7000)">
+    <h3>🖤 Stealth Black X</h3>
+    <p>Ultra silent pro grip</p>
+    <span>NPR 7,000</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Quantum Drift Mouse', 8500)">
+    <h3>⚛️ Quantum Drift</h3>
+    <p>Next-gen motion tracking</p>
+    <span>NPR 8,500</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Storm Raider Mouse', 7200)">
+    <h3>⛈️ Storm Raider</h3>
+    <p>Built for FPS domination</p>
+    <span>NPR 7,200</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Venom Core Mouse', 7800)">
+    <h3>☠️ Venom Core</h3>
+    <p>Toxic green RGB style</p>
+    <span>NPR 7,800</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Aurora Glow Mouse', 6900)">
+    <h3>🌌 Aurora Glow</h3>
+    <p>Northern lights RGB effect</p>
+    <span>NPR 6,900</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Blaze Fury Mouse', 8000)">
+    <h3>🔥 Blaze Fury</h3>
+    <p>Fire-speed gaming sensor</p>
+    <span>NPR 8,000</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Cyber Nova Mouse', 9200)">
+    <h3>🚀 Cyber Nova</h3>
+    <p>Futuristic space design</p>
+    <span>NPR 9,200</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Frostbite Elite Mouse', 7400)">
+    <h3>❄️ Frostbite Elite</h3>
+    <p>Ice cold precision clicks</p>
+    <span>NPR 7,400</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Shadow Strike V2', 8600)">
+    <h3>🗡️ Shadow Strike V2</h3>
+    <p>Upgraded stealth mode mouse</p>
+    <span>NPR 8,600</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Titan Beast Pro Mouse', 9900)">
+    <h3>🛡️ Titan Beast Pro</h3>
+    <p>Heavy esports control</p>
+    <span>NPR 9,900</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Laser Edge Mouse', 6700)">
+    <h3>⚡ Laser Edge</h3>
+    <p>Sharp precision tracking</p>
+    <span>NPR 6,700</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Nebula Drift Mouse', 8800)">
+    <h3>🌌 Nebula Drift</h3>
+    <p>Space cloud RGB effect</p>
+    <span>NPR 8,800</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Inferno Storm Mouse', 9100)">
+    <h3>🔥 Inferno Storm</h3>
+    <p>Fire + lightning hybrid design</p>
+    <span>NPR 9,100</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Ghost Phantom Mouse', 7600)">
+    <h3>👻 Ghost Phantom</h3>
+    <p>Invisible stealth design feel</p>
+    <span>NPR 7,600</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Hyper Speed X Mouse', 8300)">
+    <h3>⚡ Hyper Speed X</h3>
+    <p>Ultra fast click response</p>
+    <span>NPR 8,300</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Dragon Soul Mouse', 9400)">
+    <h3>🐉 Dragon Soul</h3>
+    <p>Mythical RGB fire design</p>
+    <span>NPR 9,400</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Ice Phantom Mouse', 7100)">
+    <h3>❄️ Ice Phantom</h3>
+    <p>Frozen stealth gaming mouse</p>
+    <span>NPR 7,100</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Royal Gold Mouse', 12000)">
+    <h3>👑 Royal Gold</h3>
+    <p>Luxury premium gold finish</p>
+    <span>NPR 12,000</span>
+</div>
+
+<div class="rgbmouse-card" onclick="addToCart('Ultimate Pro X Mouse', 15000)">
+    <h3>🏆 Ultimate Pro X</h3>
+    <p>Top tier esports mouse</p>
+    <span>NPR 15,000</span>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+</body>
+</html>

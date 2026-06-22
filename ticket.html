@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support Tickets - Rana Jussy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- GOLDEN BACKGROUND EFFECT -->
+<div class="ticket-bg"></div>
+
+<!-- Navbar -->
+<div class="navbar ticket-nav">
+    <h1 class="logo-title">🎫 SUPPORT CENTER</h1>
+
+    <div>
+        <a href="index.html">🏠 Home</a>
+        <a href="contact.html">📞 Contact</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="ticket-section animate-page">
+
+    <!-- GOLDEN BREAK ANIMATION -->
+    <div class="gold-ticket"></div>
+
+    <h1 class="fade-up">Need Help?</h1>
+
+    <p class="fade-up delay">
+        Create a support ticket and our AI support team will respond.
+    </p>
+
+    <div class="ticket-box fade-up delay2">
+
+        <input type="text" id="ticketName" placeholder="Your Name">
+
+        <input type="email" id="ticketEmail" placeholder="Your Email">
+
+        <select id="ticketCategory">
+
+            <option>Order Problem</option>
+            <option>Payment Issue</option>
+            <option>Technical Support</option>
+            <option>Product Question</option>
+            <option>Other</option>
+
+        </select>
+
+        <textarea id="ticketMessage" placeholder="Describe your issue"></textarea>
+
+        <button onclick="createTicket()" class="ticket-btn">
+            🎫 Create Ticket
+        </button>
+
+        <p id="ticketStatus"></p>
+
+    </div>
+
+</div>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+</body>
+</html>

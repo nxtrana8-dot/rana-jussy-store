@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rana Jussy - Neo Gaming Store</title>
+
+    <!-- GOOGLE FONT (PASTE HERE) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- PREMIUM NAVBAR -->
+<div class="navbar neo-nav">
+
+    <h1 class="logo-title">RANA JUSSY</h1>
+
+    <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="products.html">🎮 Products</a>
+        <a href="about.html">💎 About</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="ticket.html">🎫 Support</a>
+        <a href="cart.html" class="cart-link">🛒 Cart</a>
+    </div>
+
+</div>
+
+<!-- HERO -->
+<div class="neo-hero">
+
+    <div class="hero-glow"></div>
+
+    <div class="neo-content">
+
+        <h2>LEVEL UP YOUR GAMING EXPERIENCE</h2>
+
+        <p>Premium gaming gear built for competitive players</p>
+
+        <button class="neo-btn" onclick="goTo('products.html')">
+            🚀 SHOP NOW
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ATEGORIES -->
+<div class="neo-section-title animate up">
+🎮 GAMING CATEGORIES
+</div>
+
+<div class="container">
+    <div class="card" onclick="goTo('mouse.html')">
+    🖱️ Mouse
+</div>
+    <div class="card" onclick="goTo('keyboard.html')">
+    ⌨️ Keyboard
+</div>
+    <div class="card" onclick="goTo('headset.html')">
+    🎧 Headsets
+</div>
+    <div class="card" onclick="goTo('chairs.html')">
+    🪑 Chairs
+</div>
+    <div class="card" onclick="goTo('monitors.html')">
+    🖥️ Monitors
+</div>
+    <div class="card" onclick="goTo('controllers.html')">
+    🎮 Controllers
+</div>
+</div>
+
+<!-- PROMO BANNER -->
+<div class="promo">
+    <h2>🔥 BIG GAMING SALE</h2>
+    <p>Up to 50% OFF on selected items</p>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div class="neo-section-title">⭐ FEATURED PRODUCTS</div>
+
+<div class="featured-products">
+
+    <!-- RGB Mouse -->
+    <div class="featured-card" onclick="goTo('rgbmouse.html')">
+
+        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=800"
+        alt="RGB Mouse">
+
+        <div class="featured-info">
+            <h3>RGB Mouse</h3>
+            <p>Ultra fast DPI sensor</p>
+
+            <button class="featured-btn"
+            onclick="goTo('rgbmouse.html')">
+            View Product
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Gaming Keyboard -->
+    <div class="featured-card" onclick="goTo('rgbkeyboard.html')">
+
+        <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800"
+        alt="Gaming Keyboard">
+
+        <div class="featured-info">
+            <h3>Gaming Keyboard</h3>
+            <p>Mechanical RGB switches</p>
+
+            <button class="featured-btn"
+            onclick="goTo('rgbkeyboard.html')">
+            View Product
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Pro Headset -->
+    <div class="featured-card" onclick="goTo('rgbheadset.html')">
+
+        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800"
+        alt="Gaming Headset">
+
+        <div class="featured-info">
+            <h3>Pro Headset</h3>
+            <p>Surround sound experience</p>
+
+            <button class="featured-btn"
+            onclick="goTo('rgbheadset.html')">
+            View Product
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- WHY US -->
+<div class="neo-section-title">💎 WHY CHOOSE US</div>
+
+<div class="container">
+    <div class="card">⚡ Fast Delivery</div>
+    <div class="card">💰 Best Price</div>
+    <div class="card">🎮 Pro Gaming Gear</div>
+    <div class="card">🛡️ Trusted Quality</div>
+</div>
+
+<!-- TRENDING -->
+<div class="neo-section-title">🔥 TRENDING NOW</div>
+
+<div class="container">
+
+    <div class="card">RTX Graphics Cards</div>
+    <div class="card">Gaming Chairs Pro</div>
+    <div class="card">VR Headsets</div>
+    <div class="card">Streaming Kits</div>
+
+</div>
+
+<div class="newsletter">
+    <h2>📩 JOIN OUR GAMING COMMUNITY</h2>
+
+    <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email">
+
+    <button class="btn" onclick="subscribeEmail()">
+        Subscribe
+    </button>
+
+    <p id="subscribeMessage"></p>
+</div>
+
+<!-- TRENDING / NEWSLETTER / OTHER SECTIONS ABOVE -->
+
+<!-- SUPPORT CENTER -->
+<div class="support-section">
+
+    <div class="support-card">
+
+        <h1>🎫 NEED HELP?</h1>
+
+        <p>
+            Having problems with products, orders, or payments?
+            Create a support ticket and our team will assist you.
+        </p>
+
+        <button class="support-btn"
+        onclick="goTo('ticket.html')">
+
+            OPEN SUPPORT TICKET
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- PREMIUM FOOTER -->
+<footer class="premium-footer">
+
+    <div class="footer-grid">
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+            <h3>📩 Contact</h3>
+            <p>minecraftrana8@gmail.com</p>
+            <p>ranajussy@gmail.com</p>
+            <p>haraiyastore43@gmail.com</p>
+        </div>
+
+        <!-- PHONE -->
+        <div class="footer-box">
+            <h3>📞 Phone</h3>
+            <p>+977 9707242555</p>
+            <p>+977 9811919937</p>
+            <p>+977 9887324214</p>
+        </div>
+
+        <!-- LOCATION -->
+        <div class="footer-box">
+            <h3>📍 Locations</h3>
+            <p>Nepal - Butwal</p>
+            <p>Rudrapur Branch</p>
+            <p>Haraiya Center</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>⚖️ Legal</h3>
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="refund.html">Refund Policy</a>
+        </div>
+
+    </div>
+
+    <!-- APPS SECTION (WORKING LINKS) -->
+<div class="footer-apps">
+
+    <a href="https://play.google.com/store" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Google Play Store">
+    </a>
+
+    <a href="https://www.apple.com/app-store/" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="App Store">
+    </a>
+
+    <a href="https://chromewebstore.google.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888846.png"
+        alt="Chrome Extension">
+    </a>
+
+</div>
+
+    <!-- REDEEM + RATING -->
+    <div class="footer-extra">
+
+        <button class="redeem-btn" onclick="openRedeem()">
+        🎁 Redeem Code
+        </button>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>4.9/5 Gaming Store Rating</span>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Rana Jussy | All Rights Reserved
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+<!-- REDEEM SYSTEM -->
+<div class="redeem-overlay" id="redeemOverlay">
+
+    <div class="redeem-box">
+
+        <div class="redeem-header">🎁 GAMING REWARD CENTER</div>
+
+        <p class="redeem-sub">
+            Enter your code and unlock rewards
+        </p>
+
+        <input type="text" id="redeemInput" placeholder="Enter reward code">
+
+        <button onclick="checkCode()">REDEEM NOW</button>
+
+        <p id="redeemResult"></p>
+
+        <span onclick="closeRedeem()" class="close-btn">✖</span>
+
+    </div>
+
+</div>
+
+</body>
+</html>

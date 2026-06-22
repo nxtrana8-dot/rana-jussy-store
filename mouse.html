@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming Mouse - Rana Jussy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h1 class="logo-title">🖱️ GAMING MOUSE</h1>
+
+    <div>
+        <a href="index.html">🏠 Home</a>
+        <a href="products.html">🎮 Products</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>PRO GAMING MOUSE COLLECTION</h2>
+    <p>High precision, ultra speed, esports ready gear</p>
+    <!-- SEARCH BAR -->
+<div class="search-wrapper hero-search">
+
+    <input type="text"
+     id="searchInput"
+     placeholder="🔍 Search gaming gear..."
+     onkeyup="searchProducts(event)">
+
+    </div>
+</div>
+
+<!-- PRODUCTS GRID -->
+<div class="product-grid">
+
+    <div class="product-card">
+        <h3>Logitech G Pro X Superlight</h3>
+        <p class="price">NPR1000</p>
+        <button class="btn" onclick="addToCart('Logitech G Pro X Superlight',120)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Razer DeathAdder V3</h3>
+        <p class="price">NPR2300</p>
+        <button class="btn" onclick="addToCart('Razer DeathAdder V3',70)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>SteelSeries Rival 600</h3>
+        <p class="price">NPR2300</p>
+        <button class="btn" onclick="addToCart('SteelSeries Rival 600',65)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>HyperX Pulsefire Haste</h3>
+        <p class="price">NPR2500</p>
+        <button class="btn" onclick="addToCart('HyperX Pulsefire',50)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Glorious Model O</h3>
+        <p class="price">NPR2400</p>
+        <button class="btn" onclick="addToCart('Glorious Model O',60)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Glorious Model D</h3>
+        <p class="price">NPR600</p>
+        <button class="btn" onclick="addToCart('Glorious Model D',60)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Razer Viper Ultimate</h3>
+        <p class="price">NPR6500</p>
+        <button class="btn" onclick="addToCart('Razer Viper Ultimate',110)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Logitech G502 Hero</h3>
+        <p class="price">NPR2400</p>
+        <button class="btn" onclick="addToCart('G502 Hero',55)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Corsair M65 RGB Elite</h3>
+        <p class="price">NPR2400</p>
+        <button class="btn" onclick="addToCart('Corsair M65',75)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>ASUS ROG Gladius III</h3>
+        <p class="price">NPR5000</p>
+        <button class="btn" onclick="addToCart('ROG Gladius III',90)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Redragon M711 Cobra</h3>
+        <p class="price">NPR700</p>
+        <button class="btn" onclick="addToCart('Redragon M711',25)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Cooler Master MM710</h3>
+        <p class="price">NPR2300</p>
+        <button class="btn" onclick="addToCart('MM710',45)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Razer Basilisk V3</h3>
+        <p class="price">NPR1000</p>
+        <button class="btn" onclick="addToCart('Basilisk V3',80)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Logitech G203 Lightsync</h3>
+        <p class="price">NPR5000</p>
+        <button class="btn" onclick="addToCart('G203 Lightsync',30)">🛒 Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>HP Pavilion Gaming Mouse</h3>
+        <p class="price">NPR4500</p>
+        <button class="btn" onclick="addToCart('HP Gaming Mouse',35)">🛒 Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+</body>
+</html>

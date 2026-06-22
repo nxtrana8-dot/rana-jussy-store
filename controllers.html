@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controllers - Anime Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dash-body">
+
+<!-- TOP BAR -->
+<div class="dash-top">
+    <h1>🎮 CONTROLLER DASHBOARD</h1>
+    <!-- SEARCH BAR -->
+<div class="search-wrapper hero-search">
+
+    <input type="text"
+     id="searchInput"
+     placeholder="🔍 Search gaming gear..."
+     onkeyup="searchProducts(event)">
+
+    </div>
+    <a href="index.html">🏠 Back Home</a>
+</div>
+
+<!-- DASH GRID -->
+<div class="dash-grid">
+
+    <div class="dash-card" onclick="addToCart('Naruto Controller',7800)">
+        <h2>🔥 Naruto</h2>
+        <p>Hidden Leaf Edition</p>
+        <span>NPR 7,800</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Goku Controller',13500)">
+        <h2>⚡ Goku</h2>
+        <p>Ultra Instinct Glow</p>
+        <span>NPR 13,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Itachi Controller',11000)">
+        <h2>☠️ Itachi</h2>
+        <p>Uchiha Shadow Mode</p>
+        <span>NPR 11,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Luffy Controller',9000)">
+        <h2>🏴‍☠️ Luffy</h2>
+        <p>Pirate King Edition</p>
+        <span>NPR 9,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Zenitsu Controller',10200)">
+        <h2>⚡ Zenitsu</h2>
+        <p>Thunder Flash</p>
+        <span>NPR 10,200</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Dragon Controller',9500)">
+        <h2>🐉 Dragon Flame</h2>
+        <p>Fire Aura</p>
+        <span>NPR 9,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Sasuke Controller',12800)">
+        <h2>🖤 Sasuke</h2>
+        <p>Curse Seal Mode</p>
+        <span>NPR 12,800</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Gon Controller',9800)">
+        <h2>💚 Gon</h2>
+        <p>Hunter Mode Boost</p>
+        <span>NPR 9,800</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Killua Controller',9900)">
+        <h2>⚡ Killua</h2>
+        <p>Lightning Speed</p>
+        <span>NPR 9,900</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Gojo Controller',15000)">
+        <h2>😎 Gojo</h2>
+        <p>Infinity Domain</p>
+        <span>NPR 15,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Sukuna Controller',16000)">
+        <h2>👹 Sukuna</h2>
+        <p>King of Curses</p>
+        <span>NPR 16,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Tanjiro Controller',10500)">
+        <h2>🗡️ Tanjiro</h2>
+        <p>Water Breathing</p>
+        <span>NPR 10,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Nezuko Controller',9500)">
+        <h2>🎀 Nezuko</h2>
+        <p>Demon Power Mode</p>
+        <span>NPR 9,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Eren Controller',12000)">
+        <h2>🔥 Eren</h2>
+        <p>Titan Rage Mode</p>
+        <span>NPR 12,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Levi Controller',13000)">
+        <h2>⚔️ Levi</h2>
+        <p>Fast Attack Mode</p>
+        <span>NPR 13,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Asta Controller',11500)">
+        <h2>🖤 Asta</h2>
+        <p>Anti-Magic Mode</p>
+        <span>NPR 11,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Ichigo Controller',12500)">
+        <h2>🧡 Ichigo</h2>
+        <p>Bankai Power</p>
+        <span>NPR 12,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Saitama Controller',14000)">
+        <h2>💀 Saitama</h2>
+        <p>One Punch Mode</p>
+        <span>NPR 14,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Light Controller',10800)">
+        <h2>📓 Light</h2>
+        <p>Death Note Style</p>
+        <span>NPR 10,800</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('L Controller',10700)">
+        <h2>🧠 L</h2>
+        <p>Detective Mode</p>
+        <span>NPR 10,700</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Madara Controller',17000)">
+        <h2>🔥 Madara</h2>
+        <p>Rinnegan Power</p>
+        <span>NPR 17,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Obito Controller',15500)">
+        <h2>🌀 Obito</h2>
+        <p>Kamui Dimension</p>
+        <span>NPR 15,500</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Bakugo Controller',9800)">
+        <h2>💥 Bakugo</h2>
+        <p>Explosion Mode</p>
+        <span>NPR 9,800</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Deku Controller',10000)">
+        <h2>💚 Deku</h2>
+        <p>One For All</p>
+        <span>NPR 10,000</span>
+    </div>
+
+    <div class="dash-card" onclick="addToCart('Final Boss Controller',20000)">
+        <h2>👑 Final Boss</h2>
+        <p>Ultra Rare Edition</p>
+        <span>NPR 20,000</span>
+    </div>
+
+</div>
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+
+</body>
+</html>

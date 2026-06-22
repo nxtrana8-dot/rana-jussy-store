@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products - Rana Jussy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="social-float">
+
+    <a href="https://discord.gg/jVk7FZ8gV" target="_blank" class="social-btn discord">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X / Twitter">
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <a href="https://t.me/" target="_blank" class="social-btn telegram">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+
+</div>
+<body>
+
+<!-- PREMIUM NAVBAR -->
+<div class="navbar">
+
+    <h1 class="logo">🔥 Rana Jussy</h1>
+
+    <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="products.html">🎮 Products</a>
+        <a href="about.html">💎 About</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="ticket.html">🎫 Support</a>
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+    <div class="hero-glow"></div>
+
+    <h2>Premium Gaming Gear Store</h2>
+
+    <p>Level up your setup with pro-level accessories & hardware</p>
+
+    <button class="hero-btn">Explore Collection</button>
+    <!-- SEARCH BAR -->
+<div class="search-wrapper hero-search">
+
+    <input type="text"
+     id="searchInput"
+     placeholder="🔍 Search gaming gear..."
+     onkeyup="searchProducts(event)">
+
+    </div>
+
+</div>
+
+<!-- PRODUCTS GRID -->
+<div class="product-grid">
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB Gaming Mouse</h3>
+
+    <p class="desc">High precision RGB gaming mouse for pro FPS players</p>
+
+    <h4 class="price">NPR2500</h4>
+
+    <button class="btn" onclick="addToCart('RGB Gaming Mouse',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Mechanical Keyboard</h3>
+
+    <p class="desc">High quality Mechanical Keyboard for better sounds</p>
+
+    <h4 class="price">NPR4500</h4>
+
+    <button class="btn" onclick="addToCart('Mechanical Keyboard',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Headset Pro</h3>
+
+    <p class="desc">Gaming Headset Pro for best sound quality 0 delay</p>
+
+    <h4 class="price">NPR3500</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Headset Pro',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Mouse Pad XL</h3>
+
+    <p class="desc">High quality Mouse Pad XL smooth slide experience</p>
+
+    <h4 class="price">NPR600</h4>
+
+    <button class="btn" onclick="addToCart('Mouse Pad XL',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Chair Pro</h3>
+
+    <p class="desc">Best fro setup Gaming Chair Pro comfortable sitting experience</p>
+
+    <h4 class="price">NPR12000</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Chair Pro',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+   <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB LED Strip</h3>
+
+    <p class="desc">Best for your setups RGB LED Strip</p>
+
+    <h4 class="price">NPR1000</h4>
+
+    <button class="btn" onclick="addToCart('RGB LED Strip',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Controller</h3>
+
+    <p class="desc">New Gaming Controller With classic looks</p>
+
+    <h4 class="price">NPR2300</h4>
+
+    <button class="btn" onclick="addToCart('RGB LED Strip',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Streaming Microphone</h3>
+
+    <p class="desc">Streaming Microphone best sound quality</p>
+
+    <h4 class="price">NPR5000</h4>
+
+    <button class="btn" onclick="addToCart('Streaming Microphone',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Laptop Cooling Stand</h3>
+
+    <p class="desc">Laptop Cooling Stand high speed fans includes</p>
+
+    <h4 class="price">NPR700</h4>
+
+    <button class="btn" onclick="addToCart('Laptop Cooling Stand',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Acer Nitro V16</h3>
+
+    <p class="desc">Best Gaming Laptop In Market</p>
+
+    <h4 class="price">NPR150k</h4>
+
+    <button class="btn" onclick="addToCart('Acer nitro V16',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RTX Gaming GPU</h3>
+
+    <p class="desc">RTX Gaming GPU Better experience with White color</p>
+
+    <h4 class="price">NPR250k</h4>
+
+    <button class="btn" onclick="addToCart('RTX Gaming GPU',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RTX 5080 Graphics Card</h3>
+
+    <p class="desc">RTX 5080 Graphics Card make your gaming experience more better</p>
+
+    <h4 class="price">NPR350k</h4>
+
+    <button class="btn" onclick="addToCart('RTX 5080 Graphics Card',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>SSD 1TB</h3>
+
+    <p class="desc">make Your Storage Even Larger</p>
+
+    <h4 class="price">NPR8000</h4>
+
+    <button class="btn" onclick="addToCart('SSD 1TB',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Monitor 144Hz</h3>
+
+    <p class="desc">Boost Your Frame rate in 4k</p>
+
+    <h4 class="price">NPR15000</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Monitor 144Hz',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB PC Fans</h3>
+
+    <p class="desc">make your pc even better in looks</p>
+
+    <h4 class="price">NPR350k</h4>
+
+    <button class="btn" onclick="addToCart('RGB PC Fans',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB PC Fans</h3>
+
+    <p class="desc">make your pc even better in looks</p>
+
+    <h4 class="price">NPR350k</h4>
+
+    <button class="btn" onclick="addToCart('RGB PC Fans',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Router</h3>
+
+    <p class="desc">Best experience and 0ms in per games</p>
+
+    <h4 class="price">NPR25000</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Router',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Desk</h3>
+
+    <p class="desc">Gaming Desk with high woob quality</p>
+
+    <h4 class="price">NPR15k</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Desk',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB Mouse Bungee</h3>
+
+    <p class="desc">New conncter for mouse</p>
+
+    <h4 class="price">NPR3400</h4>
+
+    <button class="btn" onclick="addToCart('GRGB Mouse Bungee',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Webcam HD</h3>
+
+    <p class="desc">Webcam HD for streaming with 4k qulaity</p>
+
+    <h4 class="price">NPR23k</h4>
+
+    <button class="btn" onclick="addToCart('Webcam HD',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Chair Cushion</h3>
+
+    <p class="desc">smooth and comfort chair for gamer</p>
+
+    <h4 class="price">NPR35k</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Chair Cushion',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>RGB Desk Light</h3>
+
+    <p class="desc">RGB Desk Light best for setups</p>
+
+    <h4 class="price">NPR6500</h4>
+
+    <button class="btn" onclick="addToCart('RGB Desk Light',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+ <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Game Controller Grip</h3>
+
+    <p class="desc">Game Controller Grip best for gamers games like battleroyle</p>
+
+    <h4 class="price">NPR4500</h4>
+
+    <button class="btn" onclick="addToCart('Game Controller Grip',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+
+    <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Headset Stand</h3>
+
+    <p class="desc">Best Sound quality</p>
+
+    <h4 class="price">NPR2400</h4>
+
+    <button class="btn" onclick="addToCart('Headset Stand',25)">
+        🛒 Add to Cart
+    </button>
+</div>
+
+     <div class="product-card">
+    <div class="badge">PRO</div>
+
+    <h3>Gaming Bundle Pack</h3>
+
+    <p class="desc">Gaming Bundle Pack new sale in rana jussy</p>
+
+    <h4 class="price">NPR23000</h4>
+
+    <button class="btn" onclick="addToCart('Gaming Bundle Pack',25)">
+        🛒 Add to Cart
+    </button>
+</div>
